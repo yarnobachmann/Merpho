@@ -15,6 +15,13 @@
           animation-fill-mode: both;
 }
 
+.animated-bg-logo {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
 .animated-logo {
   -webkit-animation-duration: 2.5s;
           animation-duration: 2.5s;
@@ -172,6 +179,32 @@
 .background-witdh {
   -webkit-animation-name: background-witdh;
           animation-name: background-witdh;
+}
+
+@-webkit-keyframes clip-animate {
+  from {
+    clip: rect(0px,37vw,100vh,0px);
+  }
+
+
+  to {
+    clip: rect(0px,18vw,100vh,0px);
+  }
+}
+
+@keyframes clip-animate {
+  from {
+    clip: rect(0px,37vw,100vh,0px);
+  }
+
+  to {
+    clip: rect(0px,18vw,100vh,0px);
+  }
+}
+
+.clip-animate {
+  -webkit-animation-name: clip-animate;
+          animation-name: clip-animate;
 }
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */

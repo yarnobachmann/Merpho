@@ -24,15 +24,15 @@
     <div id="myNav" class="overlay">
       <div class="overlay-content uppercase">
 
-        <a href="{{ url('/fotografie') }}">....</a><br>
-        <a href="{{ url('/webdesign') }}">....</a><br>
-        <a href="{{ url('/over') }}">....</a><br>
+        <a href="{{ url('/projecten') }}">Projecten</a><br>
         <a href="{{ url('/contact') }}">Contact</a>
 
       </div>
     </div>
-    <img class="logo-with-text d-none animated-text" src="{{ URL::asset('img/logo/logo.svg') }}" alt="Merpho">
-    <div class="flex-r justify-c align-v merpho-wrapper" style="height:100vh; font-size: 60px;">
+    <img class="logo-with-text d-none animated-text" src="{{ URL::asset('/img/logo/logo.svg') }}" alt="Merpho">
+    <div class="flex-r justify-c align-v merpho-wrapper" style="height:100vh; font-size: 60px; color: black; font-weight: bold;">
+
+      <img class="merpho_bg animated-bg-logo" src="{{ URL::asset('/img/logo/bg_logo.svg') }}" alt="Merpho" style="position: absolute; width: 74vh; top: 16%; left: 32%; opacity: 0.2; ">
       <span class="left-text animated-text d-none">Program</span>
       <span class="center-text animated-text d-none">merpho</span>
       <span class="right-text animated-text d-none">thograpy</span>
@@ -43,72 +43,7 @@
 
 @section('js')
 
-<script type="text/javascript">
-  var hidden = 'd-none';
-  var program = $('.left-text');
-  var merpho = $('.center-text');
-  var thograpy = $('.right-text');
-  var logo = $('.logo-with-text');
-  var bg = $('.top-background');
-  var merphoWrapper = $('.merpho-wrapper');
-
-  $( document ).ready(function()
-  {
-    $('#nav-icon').click(function(){
-      $(this).toggleClass('open');
-    });
-
-
-    if($(".loader").not(":visible")) {
-
-
-
-    setTimeout(function(){
-      program.removeClass(hidden).addClass('slideInLeft');
-      thograpy.removeClass(hidden).addClass('slideInRight');
-    }, 100);
-
-    setTimeout(function(){
-      merpho.removeClass(hidden).addClass('fadeIn');
-    }, 500);
-
-    setTimeout(function(){
-      program.removeClass('slideInLeft animated-text').addClass('animated fadeOut');
-      thograpy.removeClass('slideInRight animated-text').addClass('animated fadeOut');
-    }, 6000);
-
-    setTimeout(function(){
-      merpho.removeClass('fadeIn animated-text').addClass('slideUpBig animated-fade-out');
-
-    }, 7000);
-
-    setTimeout(function(){
-
-      logo.removeClass(hidden).addClass('fadeIn');
-    }, 9400);
-
-
-
-
-  }else{
-
-  }
-  setTimeout(function(){
-     document.getElementById("nav-icon").style.opacity="1";
-     bg.addClass('background-witdh');
-   }, 7900);
-
-  });
-
-  function openNav() {
-   var x = document.getElementById("myNav");
-   if (x.style.width === "100%") {
-       x.style.width = "0%";
-   } else {
-       x.style.width = "100%";
-   }
-  }
-
-</script>
+<script src="{{ URL::asset('/js/home.js') }}" charset="utf-8"></script>
+<script src="{{ URL::asset('/js/menu.js') }}" charset="utf-8"></script>
 
 @endsection

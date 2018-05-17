@@ -3,11 +3,7 @@ html,body{
 }
 #top-background
 {
-  width: 100vw;
-  -webkit-transition: width 3s ease;
-    -moz-transition: width 3s ease;
-    -o-transition: width 3s ease;
-    transition: width 3s ease;
+  
 }
 
 .logo-with-text{

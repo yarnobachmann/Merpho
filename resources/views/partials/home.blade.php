@@ -13,7 +13,7 @@
   <div class="top-background-image" style="width: 100vw; height: 100vh; background-image: url('img/bg/top-bg.jpg'); background-repeat: no-repeat; background-size: cover; position: absolute; z-index: 1;" >
 
   </div>
-  <div class="top-background" id="top-background" style="background-color: #820333; z-index: 2">
+  <div class="top-background animated" id="top-background" style="background-color: #820333; z-index: 2; width: 100vw;">
     <div class="menu-cube" style="width: 150px; height: 150px; position: absolute; right: 0; top: 0; background-color: #820333;">
       <div id="nav-icon" onclick="openNav()" style="opacity: 0; right: 27%; top: 32%;">
         <span></span>
@@ -31,7 +31,7 @@
 
       </div>
     </div>
-    <img class="logo-with-text d-none animated-fade-out" src="{{ URL::asset('img/logo/logo.svg') }}" alt="Merpho">
+    <img class="logo-with-text d-none animated-text" src="{{ URL::asset('img/logo/logo.svg') }}" alt="Merpho">
     <div class="flex-r justify-c align-v merpho-wrapper" style="height:100vh; font-size: 60px;">
       <span class="left-text animated-text d-none">Program</span>
       <span class="center-text animated-text d-none">merpho</span>
@@ -83,20 +83,20 @@
     }, 7000);
 
     setTimeout(function(){
-      merphoWrapper.addClass(hidden);
-      logo.removeClass(hidden).addClass('slideInLeft');
-    }, 7500);
 
-    setTimeout(function(){
-       document.getElementById("nav-icon").style.opacity="1";
-       document.getElementById("top-background").style.width="50%";
-     }, 8000);
+      logo.removeClass(hidden).addClass('fadeIn');
+    }, 9400);
+
+
 
 
   }else{
 
   }
-
+  setTimeout(function(){
+     document.getElementById("nav-icon").style.opacity="1";
+     bg.addClass('background-witdh');
+   }, 7900);
 
   });
 

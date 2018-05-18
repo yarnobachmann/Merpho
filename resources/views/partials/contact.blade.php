@@ -83,8 +83,9 @@ color: #000;
       <div class="overlay-content uppercase">
 
         <a href="{{ url('/') }}">Home</a><br>
+        <a href="{{ url('/webdesign') }}">Webdesign</a><br>
         <a href="{{ url('/projecten') }}">Projecten</a><br>
-        <a href="{{ url('/contact') }}">Contact</a>
+        <a href="{{ url('/team') }}">Team</a><br>
 
       </div>
     </div>

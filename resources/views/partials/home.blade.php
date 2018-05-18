@@ -25,6 +25,8 @@
       <div class="overlay-content uppercase">
 
         <a href="{{ url('/projecten') }}">Projecten</a><br>
+        <a href="{{ url('/webdesign') }}">Webdesign</a><br>
+        <a href="{{ url('/projecten') }}">Team</a><br>
         <a href="{{ url('/contact') }}">Contact</a>
 
       </div>

@@ -22,3 +22,11 @@ Route::get('/projecten', function () {
 Route::get('/contact', function () {
     return view('partials.contact');
 });
+
+Route::get('/team', function () {
+    return view('partials.team');
+});
+
+Route::get('/webdesign', function () {
+    return view('partials.webdesign');
+});

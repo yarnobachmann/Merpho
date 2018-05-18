@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/projecten', function () {
     return view('partials.projecten');
 });
+
+Route::get('/contact', function () {
+    return view('partials.contact');
+});

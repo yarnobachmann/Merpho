@@ -28,19 +28,9 @@
     </div>
     <img class="logo-with-text" src="{{ URL::asset('/img/logo/logo.svg') }}" alt="Merpho">
 
+    <h1 style="text-align: center; margin-top: 4%;">Projecten</h1>
 
-  <div class="row" style="margin-top: 10%; padding-left: 2%; padding-right: 2%;">
-
-    <div class="col-sm-3"style="height: 275px; margin-bottom: 3%;">
-        <div class="project-bg flex-r justify-c align-v" style="background-color:  black; height: 275px; border-radius:2%;">
-          <div class="project-overlay" style="background-color: yellow; z-index: 2; width: 94%; height: 100%; position: absolute; border-radius:2%;">
-          </div>
-          <div class="project-name flex-r justify-c align-v" style="z-index: 3; width: 100%; height: 100%; position: absolute;">
-            <p>Hallo</p>
-          </div>
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:35%; height: 35%;" alt="Image">
-        </div>
-    </div>
+  <div class="row" style="margin-top: 6%; padding-left: 2%; padding-right: 2%;">
 
     <div class="col-sm-3"style="height: 275px; margin-bottom: 3%;">
         <div class="project-bg flex-r justify-c align-v" style="background-color:  black; height: 275px; border-radius:2%;">
@@ -107,7 +97,18 @@
           <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:35%; height: 35%;" alt="Image">
         </div>
     </div>
-    
+
+    <div class="col-sm-3"style="height: 275px; margin-bottom: 3%;">
+        <div class="project-bg flex-r justify-c align-v" style="background-color:  black; height: 275px; border-radius:2%;">
+          <div class="project-overlay" style="background-color: yellow; z-index: 2; width: 94%; height: 100%; position: absolute; border-radius:2%;">
+          </div>
+          <div class="project-name flex-r justify-c align-v" style="z-index: 3; width: 100%; height: 100%; position: absolute;">
+            <p>Hallo</p>
+          </div>
+          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:35%; height: 35%;" alt="Image">
+        </div>
+    </div>
+
   </div>
 
 

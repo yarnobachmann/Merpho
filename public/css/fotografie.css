@@ -1,49 +1,48 @@
 html,body{
   overflow: hidden;
-}
-#top-background
-{
+  overflow-y: auto;
   background-color: #820333;
-  z-index: 2;
-  width: 100vw;
-}
-
-.top-background-image{
-  width: 100vw;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  z-index: 1;
-}
-
-.menu-cube{
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 
 .logo-with-text{
-  width: 60%;
-  margin-left: 2%;
-  margin-top: 2%;
+  width: 30%;
+  margin-left: 1%;
+  margin-top: 1%;
 }
 
-.merpho-wrapper{
-  height:100vh;
-  font-size: 60px;
-  color: black;
+.top-background{
+  background-color: #820333;
+  z-index: 1;
+  width: 100vw;
+}
+
+.photography-wrapper{
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 4%;
+}
+
+.photography{
+  margin-left: 3%;
+  font-size: 50px;
   font-weight: bold;
+  color: #171716;
+  margin-bottom: 2%;
+  padding-left: 0;
 }
 
-.merpho_bg{
-  position: absolute;
-  width: 74vh;
-  top: 16%;
-  left: 32%;
-  opacity: 0.2;
+.photography-text{
+  margin-left: 3%;
+  color: #171716;
+  font-size: 20px;
+}
+
+.lightwidget-widget{
+  width:90%;
+  border:0;
+  overflow:hidden;
+  margin-left: 3%;
+  opacity: 0.8;
 }
 
 /* nav hamburger menu button */
@@ -53,9 +52,8 @@ html,body{
   width: 60px;
   height: 45px;
   position: absolute;
-  right: 27%;
-  top: 32%;
-  opacity: 0;
+  right: 2%;
+  top: 5%;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
       transform: rotate(0deg);

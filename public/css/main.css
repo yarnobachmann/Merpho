@@ -96,3 +96,7 @@ img {
 .width-v{
   width: 100vw;
 }
+
+.no-click{
+  pointer-events: none;
+}

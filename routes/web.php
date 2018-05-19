@@ -12,21 +12,29 @@
 */
 
 Route::get('/', function () {
-    return view('partials.home');
+    return view('pages.home');
 });
 
 Route::get('/projecten', function () {
-    return view('partials.projecten');
+    return view('pages.projecten');
+});
+
+Route::get('/projecten/{id}', function () {
+    return view('pages.project-single');
 });
 
 Route::get('/contact', function () {
-    return view('partials.contact');
+    return view('pages.contact');
 });
 
 Route::get('/team', function () {
-    return view('partials.team');
+    return view('pages.team');
 });
 
 Route::get('/webdesign', function () {
-    return view('partials.webdesign');
+    return view('pages.webdesign');
+});
+
+Route::get('/fotografie', function () {
+    return view('pages.fotografie');
 });

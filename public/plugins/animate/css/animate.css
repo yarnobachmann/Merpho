@@ -29,6 +29,13 @@
           animation-fill-mode: both;
 }
 
+.animated-slide-text {
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
 .animated-text {
   -webkit-animation-duration: 5.5s;
           animation-duration: 5.5s;

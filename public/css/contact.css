@@ -1,61 +1,117 @@
-html,body{
-  overflow: hidden;
-}
-#top-background
-{
+html, body {
   background-color: #820333;
-  z-index: 2;
-  width: 100vw;
-}
-
-.top-background-image{
-  width: 100vw;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  z-index: 1;
-}
-
-.menu-cube{
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  right: 0;
-  top: 0;
+  overflow-x: hidden;
 }
 
 .logo-with-text{
-  width: 60%;
-  margin-left: 2%;
-  margin-top: 2%;
+  width: 30%;
+  margin-left: 1%;
+  margin-top: 1%;
 }
 
-.merpho-wrapper{
-  height:100vh;
-  font-size: 60px;
-  color: black;
-  font-weight: bold;
+.top-background{
+  background-color: #820333;
+  z-index: 1;
+  width: 100vw;
 }
 
-.merpho_bg{
+.contact-info-wrapper{
+  background-color: #171716;
+  height: 55px;
+  color: #f2f2f2;
   position: absolute;
-  width: 74vh;
-  top: 16%;
-  left: 32%;
-  opacity: 0.2;
+  bottom: 0;
 }
+
+.tel{
+  width: 160%;
+  margin-left: 2%;
+  font-size: 22px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 3%;
+}
+
+.mail{
+  font-size: 22px;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.kvk{
+  font-size: 22px;
+  width: 100%;
+  margin-left: 60%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/*Contact sectiom*/
+.content-header{
+font-size: 45px;
+
+}
+
+.section-content{
+text-align: center;
+margin-bottom: 2%;
+
+}
+#contact{
+
+padding-top: 60px;
+width: 100%;
+width: 100vw;
+height: 550px;
+color : #f2f2f2;
+}
+.contact-section{
+padding-top: 40px;
+}
+.contact-section .col-md-6{
+width: 50%;
+}
+
+.form-line{
+border-right: 1px solid #B29999;
+}
+
+.form-group{
+margin-top: 10px;
+}
+label{
+font-size: 1.3em;
+line-height: 1em;
+font-weight: normal;
+}
+.form-control{
+font-size: 1.3em;
+color: #080808;
+}
+textarea.form-control {
+height: 135px;
+/* margin-top: px;*/
+}
+
+.submit{
+font-size: 1.1em;
+float: right;
+width: 150px;
+color: #000;
+
+}
+
 
 /* nav hamburger menu button */
 
 #nav-icon {
-  z-index: 2;
+  z-index: 6;
   width: 60px;
   height: 45px;
   position: absolute;
-  right: 27%;
-  top: 32%;
-  opacity: 0;
+  right: 2%;
+  top: 5%;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
       transform: rotate(0deg);
@@ -133,7 +189,7 @@ html,body{
     height: 100vh;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     top: 0;
     left: 0;
     background-color: rgb(0,0,0);

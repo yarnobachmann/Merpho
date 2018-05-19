@@ -6,6 +6,7 @@ var logo = $('.logo-with-text');
 var bg = $('.top-background');
 var merphoWrapper = $('.merpho-wrapper');
 var merphoBg = $('.merpho_bg');
+var menuClick = $('.menu-cube');
 
 $( document ).ready(function()
 {
@@ -28,28 +29,29 @@ $( document ).ready(function()
   }, 500);
 
   setTimeout(function(){
-    program.removeClass('slideInLeft animated-text').addClass('animated fadeOut');
-    thograpy.removeClass('slideInRight animated-text').addClass('animated fadeOut');
-  }, 6000);
+    program.removeClass('slideInLeft animated-slide-text').addClass('animated fadeOut');
+    thograpy.removeClass('slideInRight animated-slide-text').addClass('animated fadeOut');
+  }, 4000);
 
   setTimeout(function(){
-    merpho.removeClass('fadeIn animated-text').addClass('slideUpBig animated-fade-out');
+    merpho.removeClass('fadeIn animated-slide-text').addClass('slideUpBig animated-fade-out');
 
-  }, 7000);
+  }, 5000);
 
   setTimeout(function(){
      document.getElementById("nav-icon").style.opacity="1";
+     menuClick.removeClass('no-click');
      bg.addClass('background-witdh');
-   }, 7900);
+   }, 5900);
 
    setTimeout(function(){
       merphoBg.addClass('clip-animate');
-    }, 8400);
+    }, 6400);
 
   setTimeout(function(){
 
     logo.removeClass(hidden).addClass('fadeIn');
-  }, 9400);
+  }, 7400);
 
 
 

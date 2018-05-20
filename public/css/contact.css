@@ -9,6 +9,10 @@ html, body {
   margin-top: 1%;
 }
 
+.submit:hover{
+  cursor: pointer;
+}
+
 .top-background{
   background-color: #820333;
   z-index: 1;
@@ -215,7 +219,7 @@ color: #000;
         -ms-flex-direction: column;
             flex-direction: column;
     position: relative;
-    top: 25%;
+    top: 18%;
     text-align: center;
     margin-top: 30px;
 }

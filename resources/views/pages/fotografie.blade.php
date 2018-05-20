@@ -15,12 +15,28 @@
   <div class="photography-wrapper col-md-12">
     <div class="container-fluid">
       <div class="row">
-        <h1 class="photography col-6">Fotografie</h1>
+        <h1 class="photography col-9">Fotografie</h1><a class="project-button btn btn-secondary col-1" href="https://www.yarnobachmann.nl/fotografie" target="_blank">Foto's</a>
         <div class="photography-text col-11 no-padding-margin">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+          <p>{{$photography->text}} </p>
         </div>
-        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-        <iframe src="//lightwidget.com/widgets/9dbd03819ca75a32ad7e4961de8a31a2.html" scrolling="no" allowtransparency="true" class="lightwidget-widget"></iframe>
+        <div class="col-12 flex-r images-wrapper">
+          <div class="col-2 fotografie-image">
+            <img src="/storage/{{$photography->image_1}}" alt="">
+          </div>
+          <div class="col-2 fotografie-image">
+            <img src="/storage/{{$photography->image_2}}" alt="">
+          </div>
+          <div class="col-2 fotografie-image">
+            <img src="/storage/{{$photography->image_3}}" alt="">
+          </div>
+          <div class="col-2 fotografie-image">
+            <img src="/storage/{{$photography->image_4}}" alt="">
+          </div>
+          <div class="col-2 fotografie-image">
+            <img src="/storage/{{$photography->image_5}}" alt=""> 
+          </div>
+        </div>
+
       </div>
     </div>
   </div>

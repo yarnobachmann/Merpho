@@ -14,17 +14,19 @@
   @include('partials.logo')
   <h1 class="projects">Projecten</h1>
   <div class="project-text-row row">
+    @foreach($projects as $project)
     <div class="project-wrapper col-sm-3">
-      <a href="{{url('/projecten/1')}}">
+      <a href="{{ url('/projecten') }}/{{ $project->naam }}">
       <div class="project-bg flex-r justify-c align-v">
         <div class="project-overlay"></div>
         <div class="project-name flex-r justify-c align-v">
-          <p>Hallo</p>
+          <p>{{$project->naam}}</p>
         </div>
-        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive logo-img" alt="Image">
+        <img src="/storage/{{$project->logo}}" class="img-responsive logo-img" alt="Image">
       </div>
       </a>
     </div>
+    @endforeach
   </div>
 </div>
 

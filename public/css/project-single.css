@@ -32,8 +32,17 @@ body{
 
 .left-image{
   position: absolute;
-  width: 21%;
+  width: 570px;
   left: 3%;
+  overflow: hidden;
+  height: 273px;
+}
+
+.left-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: left;
 }
 
 .right-image{
@@ -44,6 +53,13 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
+}
+
+.right-image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .project-name{
@@ -186,7 +202,7 @@ body{
         -ms-flex-direction: column;
             flex-direction: column;
     position: relative;
-    top: 25%;
+    top: 18%;
     text-align: center;
     margin-top: 30px;
 }

@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'volkorn'; /*a name to be used later*/
+    src: url('/fonts/lato-Bold.ttf'); /*URL to font*/
+}
+
+html,body{
+  font-family: volkorn;
+}

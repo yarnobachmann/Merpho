@@ -11,30 +11,28 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.home');
+
+Route::get('/', 'Frontend\PagesController@home');
+
+Route::get('/webdesign', 'Frontend\PagesController@webdesign');
+
+Route::get('/fotografie', 'Frontend\PagesController@fotografie');
+
+Route::get('/projecten', 'Frontend\PagesController@projecten');
+
+Route::get('/projecten/{id}', 'Frontend\PagesController@projecten_view');
+
+Route::get('/team', 'Frontend\PagesController@team');
+
+Route::get('/contact', 'Frontend\PagesController@contact');
+
+Route::post('/contact', 'Frontend\PagesController@getcontact');
+
+Route::bind('id', function($value, $route)
+{
+    return App\Projecten::where('naam', $value)->firstOrFail();
 });
 
-Route::get('/projecten', function () {
-    return view('pages.projecten');
-});
-
-Route::get('/projecten/{id}', function () {
-    return view('pages.project-single');
-});
-
-Route::get('/contact', function () {
-    return view('pages.contact');
-});
-
-Route::get('/team', function () {
-    return view('pages.team');
-});
-
-Route::get('/webdesign', function () {
-    return view('pages.webdesign');
-});
-
-Route::get('/fotografie', function () {
-    return view('pages.fotografie');
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
 });

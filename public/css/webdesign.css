@@ -40,9 +40,16 @@ html,body{
   margin-left: 1%;
   height: 453px;
   width: 809px;
+  overflow: hidden;
   background-repeat: no-repeat;
-  background-position: center; 
+  background-position: center;
   background-size: cover;
+}
+
+.webdesign-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* nav hamburger menu button */
@@ -157,7 +164,7 @@ html,body{
         -ms-flex-direction: column;
             flex-direction: column;
     position: relative;
-    top: 25%;
+    top: 18%;
     text-align: center;
     margin-top: 30px;
 }

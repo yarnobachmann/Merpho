@@ -46,7 +46,7 @@ $( document ).ready(function()
 
    setTimeout(function(){
       merphoBg.addClass('clip-animate');
-    }, 6400);
+    }, 6350);
 
   setTimeout(function(){
 

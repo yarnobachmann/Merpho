@@ -201,11 +201,11 @@
 
 @keyframes clip-animate {
   from {
-    clip: rect(0px,37vw,100vh,0px);
+    clip: rect(0px,50vw,200vh,0px);
   }
 
   to {
-    clip: rect(0px,18vw,100vh,0px);
+    clip: rect(0px,25vw,200vh,0px);
   }
 }
 

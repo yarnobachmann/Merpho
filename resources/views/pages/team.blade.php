@@ -27,11 +27,23 @@
             <h5 class="card-special">{{$team->beroep}}</h5>
             <p class="card-text">{{$team->text}}</p>
             <div class="social-wrapper">
+	      @if($team->linkedin_link)
               <a class="linkedin" target="_blank" href="{{$team->linkedin_link}}"><img src="{{ URL::asset('/img/apps/linkedin.svg') }}" alt=""></a>
+              @else
+	      @endif
+	      @if($team->facebook_link)
               <a class="facebook" target="_blank" href="{{$team->facebook_link}}"><img src="{{ URL::asset('/img/apps/facebook.svg') }}" alt=""></a>
-              <a class="instagram" target="_blank" href="{{$team->instagram_link}}"><img src="{{ URL::asset('/img/apps/instagram.svg') }}" alt=""></a>
-              <a class="portfolio btn btn-secondary" target="_blank" href="{{$team->portfolio_link}}">Portfolio</a>
-            </div>
+              @else
+	      @endif
+	      @if($team->instagram_link)
+	      <a class="instagram" target="_blank" href="{{$team->instagram_link}}"><img src="{{ URL::asset('/img/apps/instagram.svg') }}" alt=""></a>
+              @else
+	      @endif
+	      @if($team->portfolio_link)
+	      <a class="portfolio btn btn-secondary" target="_blank" href="{{$team->portfolio_link}}">Portfolio</a>
+              @else
+	      @endif	
+	    </div>
 
           </div>
         </div>

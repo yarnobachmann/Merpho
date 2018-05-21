@@ -17,7 +17,7 @@
       <div class="row">
         <h1 class="photography col-9">Fotografie</h1><a class="project-button btn btn-secondary col-1" href="https://www.yarnobachmann.nl/fotografie" target="_blank">Foto's</a>
         <div class="photography-text col-11 no-padding-margin">
-          <p>{{$photography->text}} </p>
+          <p>{!!$photography->text!!} </p>
         </div>
         <div class="col-12 flex-r images-wrapper">
           <div class="col-2 fotografie-image">
@@ -33,7 +33,7 @@
             <img src="/storage/{{$photography->image_4}}" alt="">
           </div>
           <div class="col-2 fotografie-image">
-            <img src="/storage/{{$photography->image_5}}" alt=""> 
+            <img src="/storage/{{$photography->image_5}}" alt="">
           </div>
         </div>
 

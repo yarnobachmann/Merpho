@@ -54,7 +54,7 @@
 
 @section('content')
     <div class="page-content container-fluid">
-        <form class="form-edit-add" role="form" action="@if(isset($dataTypeContent->id)){{ route('voyager.projectens.update', $dataTypeContent->id) }}@else{{ route('voyager.projectens.store') }}@endif" method="POST" enctype="multipart/form-data">
+        <form class="form-edit-add" role="form" action="@if(isset($dataTypeContent->id)){{ route('voyager.webdesigns.update', $dataTypeContent->id) }}@else{{ route('voyager.webdesigns.store') }}@endif" method="POST" enctype="multipart/form-data">
             <!-- PUT Method if we are editing -->
             @if(isset($dataTypeContent->id))
                 {{ method_field("PUT") }}

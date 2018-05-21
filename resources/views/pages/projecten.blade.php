@@ -15,7 +15,7 @@
   <h1 class="projects">Projecten</h1>
   <div class="project-text-row row">
     @foreach($projects as $project)
-    <div class="project-wrapper col-sm-3">
+    <div class="project-wrapper col-xl-4 col-sm-4 col-4">
       <a href="{{ url('/projecten') }}/{{ $project->naam }}">
       <div class="project-bg flex-r justify-c align-v">
         <div class="project-overlay"></div>

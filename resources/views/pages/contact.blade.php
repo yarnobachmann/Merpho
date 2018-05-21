@@ -41,12 +41,14 @@
 			<h3>Wij kijken er erg naar uit om met u samen te werken!</h3>
 		</div>
     @include('partials.form')
+
   </div>
-  <div class="contact-info-wrapper col-12 flex-r">
-    <p class="tel">Tel: {{$contact->telefoon_nummer}}</p>
-    <p class="mail">{{$contact->email}}</p>
-    <p class="kvk">kvk: {{$contact->kvk_nummer}}</p>
-  </div>
+
+</div>
+<div class="contact-info-wrapper col-12 flex-r">
+  <p class="tel">Tel: {{$contact->telefoon_nummer}}</p>
+  <p class="mail">{{$contact->email}}</p>
+  <p class="kvk">kvk: {{$contact->kvk_nummer}}</p>
 </div>
 @endsection
 

@@ -1,8 +1,13 @@
 @font-face {
-    font-family: 'volkorn'; /*a name to be used later*/
-    src: url('/fonts/lato-Bold.ttf'); /*URL to font*/
+    font-family: 'Lato-Bold'; /*a name to be used later*/
+    src: url('/fonts/Lato-Bold.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/Lato-Bold?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/Lato-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/Lato-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/Lato-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#/fonts/Lato-Bold.svg') format('svg'); /* Legacy iOS */
 }
 
 html,body{
-  font-family: volkorn;
+  font-family: Lato-Bold;
 }

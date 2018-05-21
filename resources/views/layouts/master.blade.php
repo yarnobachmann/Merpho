@@ -35,6 +35,16 @@
         <script src="{{ URL::asset('/plugins/jquery/js/jquery-3.2.1.min.js')}}"></script>
         <script src="{{ URL::asset('/plugins/tether/js/tether.min.js')}}"></script>
         <script src="{{ URL::asset('/plugins/bootstrap/js/bootstrap.js')}}"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119602963-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-119602963-1');
+        </script>
+
         <script type="text/javascript">
           $(window).on('load', function() {
             setTimeout(function(){

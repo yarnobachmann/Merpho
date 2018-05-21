@@ -18,7 +18,7 @@
         <h1 class="webdesign">Webdesign</h1>
         <div class="webdesign-text col-11 no-padding-margin">
           <div class="webdesign-image"><img src="/storage/{{$webdesign->image}}" alt=""> </div>
-          <p>{{$webdesign->text}} </p>
+          <p>{!!$webdesign->text!!} </p>
         </div>
       </div>
     </div>

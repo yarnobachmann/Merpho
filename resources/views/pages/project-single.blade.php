@@ -24,7 +24,7 @@
         <h1 class="project-name col-9">{{ $project[0]->naam }}</h1>
         <a class="project-button btn btn-secondary col-1" href="{{ $project_view[0]->link }}" target="_blank">ga naar</a>
         <div class="project-text col-11 no-padding-margin">
-          <p>{{ $project_view[0]->text }}</p>
+          <p>{!! $project_view[0]->text !!}</p>
         </div>
       </div>
     </div>

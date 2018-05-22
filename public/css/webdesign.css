@@ -363,7 +363,7 @@ b{
 }
 }
 
-@media (min-width: 320px) and (min-height: 568px) and (max-width: 1023px){
+@media (min-width: 320px) and (max-width: 1023px){
   .webdesign-image{
     display: none;
   }
@@ -376,6 +376,13 @@ b{
 #nav-icon {
     top: 2%;
 }
+}
+
+@media (min-width: 320px) and (max-width: 800px){
+  .webdesign-image{
+    display: none;
+  }
+
 }
 
 @media (min-width: 360px) and (min-height: 640px) and (max-width: 1023px){

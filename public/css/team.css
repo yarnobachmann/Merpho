@@ -482,7 +482,7 @@ html,body{
 
 }
 
-@media (min-width: 320px) and (min-height: 568px) and (max-width: 1023px){
+@media (min-width: 320px) and (max-width: 1023px){
 #nav-icon {
     top: 2%;
 }

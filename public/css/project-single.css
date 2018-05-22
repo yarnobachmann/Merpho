@@ -340,6 +340,10 @@ body{
 .right-image img {
   display: none;
 }
+
+.right-image {
+    height: 196px;
+}
 #nav-icon {
     top: 2%;
 }
@@ -356,6 +360,40 @@ body{
     border: none;
     font-size: 10px;
 }
+}
+
+@media (min-width: 320px) and (max-width: 1023px){
+
+  .left-image {
+      width: 218px;
+      height: 191px;
+  }
+
+.right-image img {
+  display: none;
+}
+
+.right-image {
+    height: 196px;
+}
+#nav-icon {
+    top: 2%;
+}
+
+.project-button {
+    height: 26px;
+    max-width: 199px;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: -14.6%;
+    font-weight: bolder;
+    background-color: #383838;
+    color: #dedede;
+    border: none;
+    font-size: 10px;
+}
+
+
 }
 
 @media (min-width: 360px) and (min-height: 640px) and (max-width: 1023px){

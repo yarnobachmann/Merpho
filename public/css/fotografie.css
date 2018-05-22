@@ -355,7 +355,7 @@ html,body{
 }
 }
 
-@media (min-width: 320px) and (min-height: 568px) and (max-width: 1023px){
+@media (min-width: 320px) and (max-width: 1023px){
 
   .photography {
       font-size: 28px;
@@ -370,6 +370,21 @@ html,body{
     top: 2%;
 }
 
+.project-button {
+    height: 26px;
+    max-width: 199px;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: -14.6%;
+    font-weight: bolder;
+    background-color: #383838;
+    color: #dedede;
+    border: none;
+    font-size: 10px;
+}
+}
+
+@media (min-width: 320px) and (max-width: 1023px){
 .project-button {
     height: 26px;
     max-width: 199px;

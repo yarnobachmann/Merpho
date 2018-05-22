@@ -442,7 +442,7 @@ color: #000;
 
 }
 
-@media (min-width: 320px) and (min-height: 568px) and (max-width: 1023px){
+@media (min-width: 320px) and (max-width: 1023px){
 #nav-icon {
     top: 2%;
 }
@@ -522,6 +522,40 @@ label {
   #contact {
     padding-top: 0px;
   }
+}
+
+@media (min-width: 320px) and (max-width: 1023px){
+#nav-icon {
+    top: 2%;
+}
+
+h1, .h1 {
+    font-size: 1.5rem;
+}
+h3, .h3 {
+  font-size: 1rem;
+}
+.submit {
+  font-size: 0.5em;
+  width: 90px;
+}
+label {
+  font-size: 0.5em;
+}
+.form-control{
+    font-size: 10px;
+}
+.tel {
+    font-size: 8px;
+}
+.mail {
+    font-size: 8px;
+}
+.kvk {
+    margin-left: 18%;
+    font-size: 8px;
+}
+
 }
 
 @media (min-width: 667px) and (min-height: 375px) and (max-width: 1023px){

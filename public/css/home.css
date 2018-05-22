@@ -285,8 +285,14 @@ html,body{
   }
 }
 
-@media (min-width: 320px) and (min-height: 568px) and (max-width: 1023px){
+@media (min-width: 320px) and (max-width: 1023px){
+#nav-icon {
+    top: 10%;
+}
 
+.menu-cube {
+    width: 8%;
+}
 
   .merpho-wrapper{
     font-size: 20px;
